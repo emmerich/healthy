@@ -299,14 +299,14 @@ add_filter( 'wpiw_list_class', 'maillard_instagram_widget_ul_class' );
  */
 function maillard_footer_attribution( ){
 
-	$text = __( 'Copyright &copy; %1$s <a href="%2$s">%3$s</a> &middot; Powered by  the %4$s.', 'maillard' );
+	$text = __( 'Copyright &copy; %1$s <a href="%2$s">%3$s</a> &middot; The information provided on this page is not intended to be a substitute for professional medical advice, diagnosis or treatment. <a href="%4$s">Read our medical disclaimer.</a>', 'maillard' );
 
 	$date = date_i18n( 'Y' );
 	$url = esc_url( home_url() );
 	$name = get_bloginfo( 'name' );
-	$attribution = '<a href="https://olympusthemes.com/maillard">Maillard Theme</a>';
+	$medical_url = esc_url( sprintf( '%1$s/medical-disclaimer', home_url() ) );
 
-	return sprintf( $text, $date, $url, $name, $attribution );
+	return sprintf( $text, $date, $url, $name, $medical_url );
 
 }
 add_filter( 'zeus_footer_copyright', 'maillard_footer_attribution' );
