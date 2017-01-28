@@ -636,15 +636,12 @@ input[type='submit']:hover, button:hover {
 	max-height: 100%;
 }
 
-.entry-content > section {
-  margin-top: 20px;
+span.inline-emphasis {
+  font-weight: bold;
+  text-decoration: underline;
+  padding: 0 10px;
 }
 
-.image-container {
-  text-align: center;
-}
-
-.image-caption {
-  font-size: 10px;
-  padding-top: 2px;
+.entry-content h2 {
+  margin-top: 5rem;
 }
