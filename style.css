@@ -645,3 +645,7 @@ span.inline-emphasis {
 .entry-content h2.top-space {
   margin-top: 5rem;
 }
+
+.entry-meta {
+  display: none;
+}
