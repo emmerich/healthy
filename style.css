@@ -642,6 +642,6 @@ span.inline-emphasis {
   padding: 0 10px;
 }
 
-.entry-content h2 {
+.entry-content h2.top-space {
   margin-top: 5rem;
 }
